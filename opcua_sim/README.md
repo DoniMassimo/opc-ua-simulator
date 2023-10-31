@@ -4,6 +4,7 @@
 # Da implementare
 
 ## Clean code
+- [ ] usare questa funzione .read_data_type_as_variant_type() per leggere e inserire il data type in un struct
 - [X] get_node_attr() in client.py deve ritornare un dizionario per semplificare l'accesso dei 
 traimite le costanti di opcua_constant.py
 - [ ] come gestire diverse meglio la classe opcua_constant magari con un design pattern
@@ -20,10 +21,9 @@ traimite le costanti di opcua_constant.py
 - [ ] testare copia di un opc reale 
 
 ## Fondamentali
-- [ ] fare in modo che nel file struct vengano inseriti anche index diversi da ns=n;n=n 
-- [ ] mettere tutti i ;e variabile in write mode
-- [ ] cegliere se inserire il valore corrente on mettere il default quando vengono generatew le variabili del server
-- [ ] percorsi relativi non dinamici 
+- [X] fare in modo che nel file struct vengano inseriti anche index diversi da ns=n;n=n 
+- [X] mettere tutti i ;e variabile in write mode
+- [X] cegliere se inserire il valore corrente on mettere il default quando vengono generatew le variabili del server
 - [X] trasformare la struttura opc in un file
 - [X] generare un server da una struttura di un file 
 

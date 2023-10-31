@@ -5,4 +5,5 @@ NODE_ID: str = 'node_id'
 NODE_CLASS: str = 'node_class'
 ROOT: str = 'root'
 VALUE: str = 'value'
+DATA_TYPE: str = 'default_value'
     

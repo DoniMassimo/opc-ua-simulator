@@ -9,7 +9,7 @@ from asyncua import ua as u
 from asyncua.common import xmlimporter
 import opcua_constant as oc
 
-async def get_node_attrs(node):
+async def get_node_attrs(node, default_value=True):
     attrs = await node.read_attributes([u.AttributeIds.DisplayName, 
                                         u.AttributeIds.BrowseName, 
                                         u.AttributeIds.NodeId,
@@ -20,6 +20,13 @@ async def get_node_attrs(node):
     node_id = f'ns={attrs[2].Value.Value.NamespaceIndex};i={attrs[2].Value.Value.Identifier}'
     node_class = attrs[3].Value.Value
     value = attrs[4].Value.Value
+    if default_value:
+        if value is str:
+            value = '' 
+        elif value is int:
+            value = 0
+        elif value is float:
+            value = 0.0
     attrs_dict = {node_id:{oc.BROWSE_NAME:browse_name,
                            oc.NODE_ID:node_id,
                            oc.NODE_CLASS:node_class,
@@ -40,9 +47,11 @@ async def create_node(node_attrs: Dict[str, str], parent_node: ua.Node):
     if node_attrs[oc.NODE_CLASS] == 1:
         new_node = await parent_node.add_object(node_attrs[oc.NODE_ID],
                                      node_attrs[oc.DISPLAY_NAME])
+        await new_node.set_writable()
     else:
         new_node = await parent_node.add_variable(node_attrs[oc.NODE_ID],
                                                   node_attrs[oc.DISPLAY_NAME], node_attrs[oc.VALUE])
+        await new_node.set_writable()
     return new_node
 
 async def create_node_from_struct(rel_server_struct: Dict, current_node: ua.Node, server: ua.Server):

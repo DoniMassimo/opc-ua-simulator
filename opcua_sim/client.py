@@ -9,8 +9,7 @@ import json
 import os
 import opcua_constant as oc
 
-url = "opc.tcp://localhost:4840/freeopcua/server/"
-namespace = "http://examples.freeopcua.github.io"
+url = "opc.tcp://192.168.1.147:4840/server/"
 
 async def nodes_children_scan(node: ua.Node) -> Tuple[Dict, str]:
     node_struct, node_id = await get_node_attrs(node)
@@ -66,7 +65,6 @@ def merge_nodes_struct(structs_rel_to_udt: List[Dict], udt_structs: List[Dict]) 
         rel_struct[rel_struct_id][oc.NODE_CLASS] = rs_node_class
         rel_struct[rel_struct_id][oc.NODE_ID] = rs_node_id
         rel_struct[rel_struct_id][oc.VALUE] = rs_value
-
     return rel_struct
 
 async def create_root_to_udt_struct(udt_entry_index: List[str], client: ua.Client, udt_structs: List[Dict]):
@@ -83,7 +81,8 @@ async def get_node_attrs(node):
                                         u.AttributeIds.BrowseName, 
                                         u.AttributeIds.NodeId,
                                         u.AttributeIds.NodeClass,
-                                        u.AttributeIds.Value])
+                                        u.AttributeIds.Value,
+                                        u.AttributeIds.DataType])
     display_name = attrs[0].Value.Value.Text
     browse_name = attrs[1].Value.Value.Name
     node_id = f'ns={attrs[2].Value.Value.NamespaceIndex};i={attrs[2].Value.Value.Identifier}'
@@ -93,26 +92,30 @@ async def get_node_attrs(node):
                            oc.NODE_ID:node_id,
                            oc.NODE_CLASS:node_class,
                            oc.VALUE:value,
-                           oc.DISPLAY_NAME:display_name}}
+                           oc.DISPLAY_NAME:display_name,}}
     return attrs_dict, node_id
 
+async def build_structure(udt_entry_index: List[str], client: ua.Client) -> Dict:
+    udt_to_leaf_struct = []
+    for udt_index in udt_entry_index:
+        udt_node = client.get_node(udt_index)
+        struct, node_id = await nodes_children_scan(udt_node)
+        udt_to_leaf_struct.append(struct)
+    server_structure = await create_root_to_udt_struct(udt_entry_index, client, udt_to_leaf_struct) 
+    return server_structure
+
+def save_structure(server_structure: Dict, save_path):
+    js_server_structure = json.dumps(server_structure, indent=4)
+    with open(os.path.join(save_path, 'server_struct.json'), 'w') as server_struct_file:
+        server_struct_file.write(js_server_structure)
+
 async def main():
-    print('ci sono \n\n')
-    save_file_path = "/home/max/standard_repo/opcua_sim_venv/opcua_sim"
+    save_file_path = "/home/max/programming/opc-ua-simulator-venv/opc-ua-simulator/opcua_sim/"
     udt_entry_path = ['ns=2;i=1', 'ns=2;i=3']
     async with ua.Client(url=url) as client:
         await client.connect()       
-        udt_to_leaf_struct = []
-        for udt_index in udt_entry_path:
-            udt_node = client.get_node(udt_index)
-            struct, node_id = await nodes_children_scan(udt_node)
-            udt_to_leaf_struct.append(struct)
-        server_structure = await create_root_to_udt_struct(udt_entry_path, client, udt_to_leaf_struct) 
-        pprint(server_structure)
-        js_server_structure = json.dumps(server_structure, indent=4)
-        with open(os.path.join(save_file_path, 'server_struct.json'), 'w') as server_struct_file:
-            server_struct_file.write(js_server_structure)
-
+        server_structure = await build_structure(udt_entry_path, client)
+        save_structure(server_structure, save_file_path)
 
 if __name__ == "__main__":
     asyncio.run(main())
