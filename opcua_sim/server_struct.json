@@ -1,0 +1,53 @@
+{
+    "ns=0;i=84": {
+        "children": {
+            "ns=0;i=85": {
+                "children": {
+                    "ns=2;i=1": {
+                        "browse_name": "MyObject",
+                        "node_id": "ns=2;i=1",
+                        "node_class": 1,
+                        "value": null,
+                        "display_name": "MyObject",
+                        "children": {
+                            "ns=2;i=2": {
+                                "browse_name": "MyVariable",
+                                "node_id": "ns=2;i=2",
+                                "node_class": 2,
+                                "value": 7.399999999999998,
+                                "display_name": "MyVariable",
+                                "children": {}
+                            },
+                            "ns=2;i=4": {
+                                "browse_name": "var_index",
+                                "node_id": "ns=2;i=4",
+                                "node_class": 2,
+                                "value": 0,
+                                "display_name": "var_index",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "ns=2;i=3": {
+                        "browse_name": "second",
+                        "node_id": "ns=2;i=3",
+                        "node_class": 1,
+                        "value": null,
+                        "display_name": "second",
+                        "children": {}
+                    }
+                },
+                "browse_name": "Objects",
+                "display_name": "Objects",
+                "node_class": 1,
+                "node_id": "ns=0;i=85",
+                "value": null
+            }
+        },
+        "browse_name": "Root",
+        "display_name": "Root",
+        "node_class": 1,
+        "node_id": "ns=0;i=84",
+        "value": null
+    }
+}
