@@ -1,0 +1,3 @@
+{
+  "endpoint":"opc.tcp://localhost:4840/server/"
+}

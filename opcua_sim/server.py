@@ -47,7 +47,6 @@ async def create_node(node_attrs: Dict[str, str], parent_node: ua.Node):
     if node_attrs[oc.NODE_CLASS] == 1:
         new_node = await parent_node.add_object(node_attrs[oc.NODE_ID],
                                      node_attrs[oc.DISPLAY_NAME])
-        await new_node.set_writable()
     else:
         new_node = await parent_node.add_variable(node_attrs[oc.NODE_ID],
                                                   node_attrs[oc.DISPLAY_NAME], node_attrs[oc.VALUE])
@@ -66,10 +65,15 @@ async def create_node_from_struct(rel_server_struct: Dict, current_node: ua.Node
             await create_node_from_struct({child_id:child_attrs}, child_node, server)
 
 async def main():
-    save_file_path = os.path.abspath(__file__)
+    save_file_path = './'
     server = ua.Server()
     await server.init()
-    server.set_endpoint("opc.tcp://192.168.1.147:4840/server/")
+    config_path = os.path.join(save_file_path, 'config.json')
+    config = {}
+    with open(config_path, 'r') as f:
+        config = f.read()
+        config = json.loads(config)
+    server.set_endpoint(config["endpoint"])
     uri = "http://examples.freeopcua.github.io"
     idx = await server.register_namespace(uri)
     p = os.path.join(save_file_path, 'server_struct.json')
