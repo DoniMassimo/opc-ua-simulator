@@ -66,7 +66,7 @@ async def create_node_from_struct(rel_server_struct: Dict, current_node: ua.Node
             await create_node_from_struct({child_id:child_attrs}, child_node, server)
 
 async def main():
-    save_file_path = "/home/max/standard_repo/opcua_sim_venv/opcua_sim"
+    save_file_path = os.path.abspath(__file__)
     server = ua.Server()
     await server.init()
     server.set_endpoint("opc.tcp://192.168.1.147:4840/server/")

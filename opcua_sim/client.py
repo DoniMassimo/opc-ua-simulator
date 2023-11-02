@@ -19,7 +19,7 @@ async def nodes_children_scan(node: ua.Node) -> Tuple[Dict, str]:
         for node in sub_nodes:
             child_node_attrs, child_node_id = await nodes_children_scan(node=node)
             node_struct[node_id][oc.CHILDREN][child_node_id] = child_node_attrs[child_node_id]
-    return node_struct, node_id 
+    return node_struct, node_id
 
 async def nodes_parent_scan(node: ua.Node, child_node_attrs: Dict = {}, 
                             child_node_id: str = '') -> Tuple[Dict, str]:
@@ -81,8 +81,8 @@ async def get_node_attrs(node):
                                         u.AttributeIds.BrowseName, 
                                         u.AttributeIds.NodeId,
                                         u.AttributeIds.NodeClass,
-                                        u.AttributeIds.Value,
-                                        u.AttributeIds.DataType])
+                                        u.AttributeIds.Value,])
+                                        
     display_name = attrs[0].Value.Value.Text
     browse_name = attrs[1].Value.Value.Name
     node_id = f'ns={attrs[2].Value.Value.NamespaceIndex};i={attrs[2].Value.Value.Identifier}'
@@ -110,8 +110,9 @@ def save_structure(server_structure: Dict, save_path):
         server_struct_file.write(js_server_structure)
 
 async def main():
-    save_file_path = "/home/max/programming/opc-ua-simulator-venv/opc-ua-simulator/opcua_sim/"
-    udt_entry_path = ['ns=2;i=1', 'ns=2;i=3']
+    # save_file_path = os.path.abspath(__file__)
+    save_file_path = "./" 
+    udt_entry_path = ['ns=2;i=1']
     async with ua.Client(url=url) as client:
         await client.connect()       
         server_structure = await build_structure(udt_entry_path, client)
