@@ -9,8 +9,6 @@ import json
 import os
 import opcua_constant as oc
 
-url = "opc.tcp://192.168.1.147:4840/server/"
-
 async def nodes_children_scan(node: ua.Node) -> Tuple[Dict, str]:
     node_struct, node_id = await get_node_attrs(node)
     node_struct[node_id][oc.CHILDREN] = {}
@@ -109,14 +107,26 @@ def save_structure(server_structure: Dict, save_path):
     with open(os.path.join(save_path, 'server_struct.json'), 'w') as server_struct_file:
         server_struct_file.write(js_server_structure)
 
+def load_config(config_file_path = './config.json') -> Dict:
+    config = {}
+    with open(config_file_path, 'r') as config_file:
+        config = config_file.read()
+        config = json.loads(config)
+    return config
+
 async def main():
-    # save_file_path = os.path.abspath(__file__)
-    save_file_path = "./" 
-    udt_entry_path = ['ns=2;i=1']
-    async with ua.Client(url=url) as client:
-        await client.connect()       
-        server_structure = await build_structure(udt_entry_path, client)
-        save_structure(server_structure, save_file_path)
+    config = load_config()
+    save_path = config[oc.STRUCT_FILE]
+    server_structure = {}
+    for settings in config[oc.OPC_SETTINGS]:
+        url = settings[oc.END_POINT]
+        udt_entry_path = settings[oc.UDT_ENTRY_INDEX]
+        async with ua.Client(url=url) as client:
+            await client.connect()       
+            current_server_structure = await build_structure(udt_entry_path, client)
+            server_structure[url] = current_server_structure
+    save_structure(server_structure, save_path)
+
 
 if __name__ == "__main__":
     asyncio.run(main())

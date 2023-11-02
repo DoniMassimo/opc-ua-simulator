@@ -1,3 +1,4 @@
 {
-  "endpoint":"opc.tcp://localhost:4840/server/"
+  "opc_settings":[{"opc_endpoint_to_scan":"opc.tcp://10.10.1.26:4840/server", "udt_entry_index":["ns=2;i=1", "ns=2;i=6"]}],
+  "save_scan_file":"./"
 }

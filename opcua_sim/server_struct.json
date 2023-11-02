@@ -1,158 +1,96 @@
 {
-    "ns=0;i=84": {
-        "children": {
-            "ns=2;i=1": {
-                "browse_name": "obj10",
-                "node_id": "ns=2;i=1",
-                "node_class": 1,
-                "value": null,
-                "display_name": "obj10",
-                "children": {
-                    "ns=2;i=2": {
-                        "browse_name": "obj100",
-                        "node_id": "ns=2;i=2",
-                        "node_class": 1,
-                        "value": null,
-                        "display_name": "obj100",
-                        "children": {
-                            "ns=2;i=3": {
-                                "browse_name": "obj1000",
-                                "node_id": "ns=2;i=3",
-                                "node_class": 1,
-                                "value": null,
-                                "display_name": "obj1000",
-                                "children": {
-                                    "ns=2;i=4": {
-                                        "browse_name": "obj10000",
-                                        "node_id": "ns=2;i=4",
-                                        "node_class": 1,
-                                        "value": null,
-                                        "display_name": "obj10000",
-                                        "children": {
-                                            "ns=2;i=5": {
-                                                "browse_name": "obj100000",
-                                                "node_id": "ns=2;i=5",
-                                                "node_class": 1,
-                                                "value": null,
-                                                "display_name": "obj100000",
-                                                "children": {
-                                                    "ns=2;i=6": {
-                                                        "browse_name": "var1000000",
-                                                        "node_id": "ns=2;i=6",
-                                                        "node_class": 2,
-                                                        "value": "85",
-                                                        "display_name": "var1000000",
-                                                        "children": {}
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
+    "opc.tcp://10.10.1.26:4840/server": {
+        "ns=0;i=84": {
+            "children": {
+                "ns=0;i=85": {
+                    "children": {
+                        "ns=2;i=1": {
+                            "browse_name": "MyObject",
+                            "node_id": "ns=2;i=1",
+                            "node_class": 1,
+                            "value": null,
+                            "display_name": "MyObject",
+                            "children": {
+                                "ns=2;i=2": {
+                                    "browse_name": "MyVariable",
+                                    "node_id": "ns=2;i=2",
+                                    "node_class": 2,
+                                    "value": 6.7,
+                                    "display_name": "MyVariable",
+                                    "children": {}
+                                },
+                                "ns=2;i=3": {
+                                    "browse_name": "var1",
+                                    "node_id": "ns=2;i=3",
+                                    "node_class": 2,
+                                    "value": 6.7,
+                                    "display_name": "var1",
+                                    "children": {}
+                                },
+                                "ns=2;i=4": {
+                                    "browse_name": "var2",
+                                    "node_id": "ns=2;i=4",
+                                    "node_class": 2,
+                                    "value": 6.7,
+                                    "display_name": "var2",
+                                    "children": {}
+                                },
+                                "ns=2;i=5": {
+                                    "browse_name": "var3",
+                                    "node_id": "ns=2;i=5",
+                                    "node_class": 2,
+                                    "value": 6.7,
+                                    "display_name": "var3",
+                                    "children": {}
                                 }
-                            },
-                            "ns=2;i=7": {
-                                "browse_name": "obj1001",
-                                "node_id": "ns=2;i=7",
-                                "node_class": 1,
-                                "value": null,
-                                "display_name": "obj1001",
-                                "children": {
-                                    "ns=2;i=8": {
-                                        "browse_name": "var10010",
-                                        "node_id": "ns=2;i=8",
-                                        "node_class": 2,
-                                        "value": 76,
-                                        "display_name": "var10010",
-                                        "children": {}
-                                    }
+                            }
+                        },
+                        "ns=2;i=6": {
+                            "browse_name": "second",
+                            "node_id": "ns=2;i=6",
+                            "node_class": 1,
+                            "value": null,
+                            "display_name": "second",
+                            "children": {
+                                "ns=2;i=7": {
+                                    "browse_name": "var4",
+                                    "node_id": "ns=2;i=7",
+                                    "node_class": 2,
+                                    "value": "ciao",
+                                    "display_name": "var4",
+                                    "children": {}
+                                },
+                                "ns=2;i=8": {
+                                    "browse_name": "var5",
+                                    "node_id": "ns=2;i=8",
+                                    "node_class": 2,
+                                    "value": "ciao",
+                                    "display_name": "var5",
+                                    "children": {}
+                                },
+                                "ns=2;i=9": {
+                                    "browse_name": "var6",
+                                    "node_id": "ns=2;i=9",
+                                    "node_class": 2,
+                                    "value": "ciao",
+                                    "display_name": "var6",
+                                    "children": {}
                                 }
                             }
                         }
                     },
-                    "ns=2;i=9": {
-                        "browse_name": "obj101",
-                        "node_id": "ns=2;i=9",
-                        "node_class": 1,
-                        "value": null,
-                        "display_name": "obj101",
-                        "children": {
-                            "ns=2;i=10": {
-                                "browse_name": "var1010",
-                                "node_id": "ns=2;i=10",
-                                "node_class": 2,
-                                "value": "U6FGV",
-                                "display_name": "var1010",
-                                "children": {}
-                            }
-                        }
-                    },
-                    "ns=2;i=11": {
-                        "browse_name": "obj102",
-                        "node_id": "ns=2;i=11",
-                        "node_class": 1,
-                        "value": null,
-                        "display_name": "obj102",
-                        "children": {
-                            "ns=2;i=12": {
-                                "browse_name": "obj1020",
-                                "node_id": "ns=2;i=12",
-                                "node_class": 1,
-                                "value": null,
-                                "display_name": "obj1020",
-                                "children": {
-                                    "ns=2;i=13": {
-                                        "browse_name": "obj10200",
-                                        "node_id": "ns=2;i=13",
-                                        "node_class": 1,
-                                        "value": null,
-                                        "display_name": "obj10200",
-                                        "children": {
-                                            "ns=2;i=14": {
-                                                "browse_name": "var102000",
-                                                "node_id": "ns=2;i=14",
-                                                "node_class": 2,
-                                                "value": 83,
-                                                "display_name": "var102000",
-                                                "children": {}
-                                            }
-                                        }
-                                    }
-                                }
-                            },
-                            "ns=2;i=15": {
-                                "browse_name": "var1021",
-                                "node_id": "ns=2;i=15",
-                                "node_class": 2,
-                                "value": 60,
-                                "display_name": "var1021",
-                                "children": {}
-                            }
-                        }
-                    },
-                    "ns=2;i=16": {
-                        "browse_name": "obj103",
-                        "node_id": "ns=2;i=16",
-                        "node_class": 1,
-                        "value": null,
-                        "display_name": "obj103",
-                        "children": {
-                            "ns=2;i=17": {
-                                "browse_name": "var1030",
-                                "node_id": "ns=2;i=17",
-                                "node_class": 2,
-                                "value": "VH8W8",
-                                "display_name": "var1030",
-                                "children": {}
-                            }
-                        }
-                    }
+                    "browse_name": "Objects",
+                    "display_name": "Objects",
+                    "node_class": 1,
+                    "node_id": "ns=0;i=85",
+                    "value": null
                 }
-            }
-        },
-        "browse_name": "Root",
-        "display_name": "Root",
-        "node_class": 1,
-        "node_id": "ns=0;i=84",
-        "value": null
+            },
+            "browse_name": "Root",
+            "display_name": "Root",
+            "node_class": 1,
+            "node_id": "ns=0;i=84",
+            "value": null
+        }
     }
 }
