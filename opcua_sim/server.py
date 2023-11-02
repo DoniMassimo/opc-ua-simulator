@@ -1,8 +1,9 @@
 import asyncio
-from typing import List, Dict
+from typing import List, Dict, Tuple
 import logging
 import os
 import json
+import socket
 from pprint import pprint
 import asyncua as ua
 from asyncua import ua as u 
@@ -64,23 +65,33 @@ async def create_node_from_struct(rel_server_struct: Dict, current_node: ua.Node
             child_node = server.get_node(child_id)
             await create_node_from_struct({child_id:child_attrs}, child_node, server)
 
+def get_ip() -> str:
+    host_name = socket.gethostname()
+    ip_address = socket.gethostbyname(host_name)
+    return ip_address
+
+def get_struct_and_endpoint(struct_path: str) -> Tuple[Dict, str]:
+    all_structs: Dict = {}
+    with open(struct_path, 'r') as all_structs_file:
+        json_all_structs = all_structs_file.read()
+        all_structs = json.loads(json_all_structs)
+    current_ip = get_ip()
+    struct: Dict = {}
+    endpoint = ''
+    for key, value in all_structs.items():
+        if current_ip in str(key):
+            endpoint = key
+            struct = all_structs[key]
+    return struct, endpoint
+
 async def main():
     save_file_path = './'
     server = ua.Server()
     await server.init()
-    config_path = os.path.join(save_file_path, 'config.json')
-    config = {}
-    with open(config_path, 'r') as f:
-        config = f.read()
-        config = json.loads(config)
-    server.set_endpoint(config["endpoint"])
     uri = "http://examples.freeopcua.github.io"
-    idx = await server.register_namespace(uri)
     p = os.path.join(save_file_path, 'server_struct.json')
-    server_structure = {}
-    with open(p, 'r') as f:
-        server_structure = f.read()
-        server_structure = json.loads(server_structure)
+    server_structure, server_endpoint = get_struct_and_endpoint(p)
+    server.set_endpoint(server_endpoint)
     root_node = server.get_root_node()
     await create_node_from_struct(server_structure, root_node, server)
     async with server:
