@@ -1,5 +1,5 @@
 import asyncio
-from typing import List, Dict, Tuple
+from typing import List, Dict, Tuple, Callable
 import logging
 import os
 import json
@@ -7,7 +7,6 @@ import socket
 from pprint import pprint
 import asyncua as ua
 from asyncua import ua as u 
-from asyncua.common import xmlimporter
 import opcua_constant as oc
 
 async def get_node_attrs(node, default_value=True):
@@ -84,20 +83,46 @@ def get_struct_and_endpoint(struct_path: str) -> Tuple[Dict, str]:
             struct = all_structs[key]
     return struct, endpoint
 
-async def main():
-    save_file_path = './'
+class SubHandler(object):
+    data_change_callback: Dict[str, Callable]
+    def __init__(self, data_change_callback: Dict[str, Callable]):
+        self.data_change_callback = data_change_callback
+
+    async def datachange_notification(self, node: ua.Node, val, data):
+        node_attrs = await get_node_attrs(node) 
+        node_id = node_attrs[1]
+        self.data_change_callback[node_id](node, val, data)
+
+    # def event_notification(self, event):
+    #     _logger.warning("Python: New event %s", event)
+
+def start_server(struct_path, data_change_callback: Dict[str, Callable]):
+    server_structure, server_endpoint = get_struct_and_endpoint(struct_path)
+    asyncio.run(main(server_structure, server_endpoint, data_change_callback))
+
+async def set_callback(server: ua.Server, data_change_callback: Dict[str, Callable]):
+    handler = SubHandler(data_change_callback)
+    for node_id, callback in data_change_callback.items():
+        node = server.get_node(node_id)
+        sub = await server.create_subscription(500, handler)
+        await sub.subscribe_data_change(node)
+
+async def main(server_structure: Dict, server_endpoint: str, data_change_callback: Dict[str, Callable]):
     server = ua.Server()
     await server.init()
-    uri = "http://examples.freeopcua.github.io"
-    p = os.path.join(save_file_path, 'server_struct.json')
-    server_structure, server_endpoint = get_struct_and_endpoint(p)
+    # uri = "http://examples.freeopcua.github.io"
     server.set_endpoint(server_endpoint)
     root_node = server.get_root_node()
     await create_node_from_struct(server_structure, root_node, server)
+    await set_callback(server, data_change_callback)
+    # n = server.get_node('ns=2;i=2')
+    # handler = SubHandler()
+    # sub = await server.create_subscription(500, handler)
+    # handle = await sub.subscribe_data_change(n)
+    i = 0.0
     async with server:
         while True:
             await asyncio.sleep(1)
+            i += 0.6
+            # await n.write_value(i)
 
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.DEBUG)
-    asyncio.run(main(), debug=True)

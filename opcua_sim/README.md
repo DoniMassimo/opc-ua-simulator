@@ -13,9 +13,11 @@ traimite le costanti di opcua_constant.py
     dalla libraria asyncua 
 
 ## test stack
-- [ ] testare se il client riesce a scannerizzare piu server
 - [ ] osservare struttura di un opc reale 
 - [ ] testare copia di un opc reale 
+
+## BUG
+- [ ] importare opcua_constant
 
 ## Fondamentali
 - [ ] creare libreria per scriptre funzioni

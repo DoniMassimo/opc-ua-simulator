@@ -102,9 +102,9 @@ async def build_structure(udt_entry_index: List[str], client: ua.Client) -> Dict
     server_structure = await create_root_to_udt_struct(udt_entry_index, client, udt_to_leaf_struct) 
     return server_structure
 
-def save_structure(server_structure: Dict, save_path):
+def save_structure(server_structure: Dict, save_path: str):
     js_server_structure = json.dumps(server_structure, indent=4)
-    with open(os.path.join(save_path, 'server_struct.json'), 'w') as server_struct_file:
+    with open(save_path, 'w') as server_struct_file:
         server_struct_file.write(js_server_structure)
 
 def load_config(config_file_path = './config.json') -> Dict:
@@ -114,9 +114,12 @@ def load_config(config_file_path = './config.json') -> Dict:
         config = json.loads(config)
     return config
 
-async def main():
-    config = load_config()
-    save_path = config[oc.STRUCT_FILE]
+def start_client(config_files_name: List[str], save_path: str):
+    for config_name in config_files_name:
+        config = load_config(f'./{config_name}')
+        asyncio.run(main(config, save_path))
+        
+async def main(config: Dict, save_path: str):
     server_structure = {}
     for settings in config[oc.OPC_SETTINGS]:
         url = settings[oc.END_POINT]
@@ -127,6 +130,5 @@ async def main():
             server_structure[url] = current_server_structure
     save_structure(server_structure, save_path)
 
-
 if __name__ == "__main__":
-    asyncio.run(main())
+    start_client(['config.json'], '../server_struct/test.json') 

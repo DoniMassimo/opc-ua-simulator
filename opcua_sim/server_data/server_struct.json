@@ -1,5 +1,5 @@
 {
-    "opc.tcp://10.10.1.26:4840/server": {
+    "opc.tcp://10.10.0.10:4840/server": {
         "ns=0;i=84": {
             "children": {
                 "ns=0;i=85": {
