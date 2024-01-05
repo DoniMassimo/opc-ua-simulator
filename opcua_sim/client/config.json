@@ -1,0 +1,12 @@
+{
+  "opc_settings": [
+    {
+      "save_file_name": "10_10_219_65.json",
+      "opc_endpoint_to_scan": "opc.tcp://10.10.219.65:4840",
+      "udt_entry_index": [
+        "ns=4;i=69"
+      ],
+      "default_value":true
+    }
+  ]
+}
