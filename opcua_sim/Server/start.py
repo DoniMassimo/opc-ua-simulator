@@ -6,6 +6,6 @@ def first_callback(node: ua.Node, val, data):
 
 
 if __name__ == "__main__":
-    server.start_server('../server_data/server_struct.json', {'ns=2;i=2': first_callback})
+    server.start_server(r'C:\Users\mdoni\Desktop\MAX\Project\Python\opc-ua-simulator\opcua_sim\Client\save\10_10_219_65.json', {})
 
 

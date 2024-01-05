@@ -93,9 +93,6 @@ class SubHandler(object):
         node_id = node_attrs[1]
         self.data_change_callback[node_id](node, val, data)
 
-    # def event_notification(self, event):
-    #     _logger.warning("Python: New event %s", event)
-
 def start_server(struct_path, data_change_callback: Dict[str, Callable]):
     server_structure, server_endpoint = get_struct_and_endpoint(struct_path)
     asyncio.run(main(server_structure, server_endpoint, data_change_callback))

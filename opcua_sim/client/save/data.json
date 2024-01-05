@@ -1,0 +1,79 @@
+
+{
+    "name": "GENERALE",
+    "tagType": "Folder",
+    "tags": [
+        {
+            "name": "FREQUENCY",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=76",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "ACTIVE_IMPORT",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=77",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "REACTIVE_IMPORT",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=78",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "APPARENT_IMPORT",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=79",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "ACTIVE_POWER_TOTAL",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=80",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "REACTIVE_POWER_TOTAL",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=81",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "APPARENT_POWER_TOTAL",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=82",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        },
+        {
+            "name": "POWER_FACTOR_TOTAL",
+            "valueSource": "opc",
+            "opcItemPath": "ns=4;i=83",
+            "dataType": "Float4",
+            "tagGroup": "Erogatore_1_cmd",
+            "opcServer": "Erogatore_5",
+            "tagType": "AtomicTag"
+        }
+    ]
+}

@@ -1,0 +1,704 @@
+{
+    "opc.tcp://10.10.219.65:4840": {
+        "ns=0;i=84": {
+            "children": {
+                "ns=0;i=85": {
+                    "children": {
+                        "ns=3;i=ServerInterfaces": {
+                            "children": {
+                                "ns=4;i=1": {
+                                    "children": {
+                                        "ns=4;i=69": {
+                                            "browse_name": "DATA_STATUS",
+                                            "node_id": "ns=4;i=69",
+                                            "node_class": 1,
+                                            "value": null,
+                                            "display_name": "DATA_STATUS",
+                                            "data_type": null,
+                                            "children": {
+                                                "ns=4;i=72": {
+                                                    "browse_name": "STATUS",
+                                                    "node_id": "ns=4;i=72",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "STATUS",
+                                                    "data_type": "structure",
+                                                    "children": {
+                                                        "ns=4;i=75": {
+                                                            "browse_name": "GENERALE",
+                                                            "node_id": "ns=4;i=75",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "GENERALE",
+                                                            "data_type": "structure",
+                                                            "children": {
+                                                                "ns=4;i=76": {
+                                                                    "browse_name": "FREQUENCY",
+                                                                    "node_id": "ns=4;i=76",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "FREQUENCY",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=77": {
+                                                                    "browse_name": "ACTIVE_IMPORT",
+                                                                    "node_id": "ns=4;i=77",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_IMPORT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=78": {
+                                                                    "browse_name": "REACTIVE_IMPORT",
+                                                                    "node_id": "ns=4;i=78",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_IMPORT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=79": {
+                                                                    "browse_name": "APPARENT_IMPORT",
+                                                                    "node_id": "ns=4;i=79",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "APPARENT_IMPORT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=80": {
+                                                                    "browse_name": "ACTIVE_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=80",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER_TOTAL",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=81": {
+                                                                    "browse_name": "REACTIVE_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=81",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER_TOTAL",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=82": {
+                                                                    "browse_name": "APPARENT_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=82",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "APPARENT_POWER_TOTAL",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=83": {
+                                                                    "browse_name": "POWER_FACTOR_TOTAL",
+                                                                    "node_id": "ns=4;i=83",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "POWER_FACTOR_TOTAL",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=86": {
+                                                            "browse_name": "FASE_1",
+                                                            "node_id": "ns=4;i=86",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_1",
+                                                            "data_type": "structure",
+                                                            "children": {
+                                                                "ns=4;i=87": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=87",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=88": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=88",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=89": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=89",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=90": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=90",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=91": {
+                                                            "browse_name": "FASE_2",
+                                                            "node_id": "ns=4;i=91",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_2",
+                                                            "data_type": "structure",
+                                                            "children": {
+                                                                "ns=4;i=92": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=92",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=93": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=93",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=94": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=94",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=95": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=95",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=96": {
+                                                            "browse_name": "FASE_3",
+                                                            "node_id": "ns=4;i=96",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_3",
+                                                            "data_type": "structure",
+                                                            "children": {
+                                                                "ns=4;i=97": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=97",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=98": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=98",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=99": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=99",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=100": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=100",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "data_type": "float",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=101": {
+                                                            "browse_name": "TEMPERATURA_ARIA",
+                                                            "node_id": "ns=4;i=101",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_ARIA",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=102": {
+                                                            "browse_name": "TEMPERATURA_OLIO",
+                                                            "node_id": "ns=4;i=102",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_OLIO",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=103": {
+                                                            "browse_name": "TEMPERATURA_MATERIALE",
+                                                            "node_id": "ns=4;i=103",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_MATERIALE",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=104": {
+                                                            "browse_name": "TEMPERATURA_TUBO_1",
+                                                            "node_id": "ns=4;i=104",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_TUBO_1",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=105": {
+                                                            "browse_name": "TEMPERATURA_TESTA_1",
+                                                            "node_id": "ns=4;i=105",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_TESTA_1",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=106": {
+                                                            "browse_name": "TEMPERATURA_TUBO_2",
+                                                            "node_id": "ns=4;i=106",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_TUBO_2",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=107": {
+                                                            "browse_name": "TEMPERATURA_TESTA_2",
+                                                            "node_id": "ns=4;i=107",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_TESTA_2",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=108": {
+                                                            "browse_name": "PESO_CONTENUTO_SERBATOIO",
+                                                            "node_id": "ns=4;i=108",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "PESO_CONTENUTO_SERBATOIO",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=109": {
+                                                            "browse_name": "PESO_MAX_SERBATOIO",
+                                                            "node_id": "ns=4;i=109",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "PESO_MAX_SERBATOIO",
+                                                            "data_type": "float",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=110": {
+                                                    "browse_name": "ALLARMI",
+                                                    "node_id": "ns=4;i=110",
+                                                    "node_class": 2,
+                                                    "value": "",
+                                                    "display_name": "ALLARMI",
+                                                    "data_type": "string",
+                                                    "children": {
+                                                        "ns=4;i=111": {
+                                                            "browse_name": "[0]",
+                                                            "node_id": "ns=4;i=111",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[0]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=112": {
+                                                            "browse_name": "[1]",
+                                                            "node_id": "ns=4;i=112",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[1]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=113": {
+                                                            "browse_name": "[2]",
+                                                            "node_id": "ns=4;i=113",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[2]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=114": {
+                                                            "browse_name": "[3]",
+                                                            "node_id": "ns=4;i=114",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[3]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=115": {
+                                                            "browse_name": "[4]",
+                                                            "node_id": "ns=4;i=115",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[4]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=116": {
+                                                            "browse_name": "[5]",
+                                                            "node_id": "ns=4;i=116",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[5]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=117": {
+                                                            "browse_name": "[6]",
+                                                            "node_id": "ns=4;i=117",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[6]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=118": {
+                                                            "browse_name": "[7]",
+                                                            "node_id": "ns=4;i=118",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[7]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=119": {
+                                                            "browse_name": "[8]",
+                                                            "node_id": "ns=4;i=119",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[8]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=120": {
+                                                            "browse_name": "[9]",
+                                                            "node_id": "ns=4;i=120",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[9]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=121": {
+                                                            "browse_name": "[10]",
+                                                            "node_id": "ns=4;i=121",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[10]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=122": {
+                                                            "browse_name": "[11]",
+                                                            "node_id": "ns=4;i=122",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[11]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=123": {
+                                                            "browse_name": "[12]",
+                                                            "node_id": "ns=4;i=123",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[12]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=124": {
+                                                            "browse_name": "[13]",
+                                                            "node_id": "ns=4;i=124",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[13]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=125": {
+                                                            "browse_name": "[14]",
+                                                            "node_id": "ns=4;i=125",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[14]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=126": {
+                                                            "browse_name": "[15]",
+                                                            "node_id": "ns=4;i=126",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[15]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=127": {
+                                                            "browse_name": "[16]",
+                                                            "node_id": "ns=4;i=127",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[16]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=128": {
+                                                            "browse_name": "[17]",
+                                                            "node_id": "ns=4;i=128",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[17]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=129": {
+                                                            "browse_name": "[18]",
+                                                            "node_id": "ns=4;i=129",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[18]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=130": {
+                                                            "browse_name": "[19]",
+                                                            "node_id": "ns=4;i=130",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[19]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=131": {
+                                                            "browse_name": "[20]",
+                                                            "node_id": "ns=4;i=131",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[20]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=132": {
+                                                            "browse_name": "[21]",
+                                                            "node_id": "ns=4;i=132",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[21]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=133": {
+                                                            "browse_name": "[22]",
+                                                            "node_id": "ns=4;i=133",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[22]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=134": {
+                                                            "browse_name": "[23]",
+                                                            "node_id": "ns=4;i=134",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[23]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=135": {
+                                                            "browse_name": "[24]",
+                                                            "node_id": "ns=4;i=135",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[24]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=136": {
+                                                            "browse_name": "[25]",
+                                                            "node_id": "ns=4;i=136",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[25]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=137": {
+                                                            "browse_name": "[26]",
+                                                            "node_id": "ns=4;i=137",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[26]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=138": {
+                                                            "browse_name": "[27]",
+                                                            "node_id": "ns=4;i=138",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[27]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=139": {
+                                                            "browse_name": "[28]",
+                                                            "node_id": "ns=4;i=139",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[28]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=140": {
+                                                            "browse_name": "[29]",
+                                                            "node_id": "ns=4;i=140",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[29]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=141": {
+                                                            "browse_name": "[30]",
+                                                            "node_id": "ns=4;i=141",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[30]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=142": {
+                                                            "browse_name": "[31]",
+                                                            "node_id": "ns=4;i=142",
+                                                            "node_class": 2,
+                                                            "value": "",
+                                                            "display_name": "[31]",
+                                                            "data_type": "string",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=143": {
+                                                    "browse_name": "TEMP_PST",
+                                                    "node_id": "ns=4;i=143",
+                                                    "node_class": 2,
+                                                    "value": 0.0,
+                                                    "display_name": "TEMP_PST",
+                                                    "data_type": "float",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=144": {
+                                                    "browse_name": "N_EROGAZIONI_1",
+                                                    "node_id": "ns=4;i=144",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "N_EROGAZIONI_1",
+                                                    "data_type": "integer",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=145": {
+                                                    "browse_name": "QTA_MATERIALE_1",
+                                                    "node_id": "ns=4;i=145",
+                                                    "node_class": 2,
+                                                    "value": 0.0,
+                                                    "display_name": "QTA_MATERIALE_1",
+                                                    "data_type": "float",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=146": {
+                                                    "browse_name": "N_EROGAZIONI_2",
+                                                    "node_id": "ns=4;i=146",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "N_EROGAZIONI_2",
+                                                    "data_type": "integer",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=147": {
+                                                    "browse_name": "QTA_MATERIALE_2",
+                                                    "node_id": "ns=4;i=147",
+                                                    "node_class": 2,
+                                                    "value": 0.0,
+                                                    "display_name": "QTA_MATERIALE_2",
+                                                    "data_type": "float",
+                                                    "children": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "browse_name": "PLC_1",
+                                    "display_name": "PLC_1",
+                                    "node_class": 1,
+                                    "node_id": "ns=4;i=1",
+                                    "value": null
+                                }
+                            },
+                            "browse_name": "ServerInterfaces",
+                            "display_name": "ServerInterfaces",
+                            "node_class": 1,
+                            "node_id": "ns=3;i=ServerInterfaces",
+                            "value": null
+                        }
+                    },
+                    "browse_name": "Objects",
+                    "display_name": "Objects",
+                    "node_class": 1,
+                    "node_id": "ns=0;i=85",
+                    "value": null
+                }
+            },
+            "browse_name": "Root",
+            "display_name": "Root",
+            "node_class": 1,
+            "node_id": "ns=0;i=84",
+            "value": null
+        }
+    }
+}

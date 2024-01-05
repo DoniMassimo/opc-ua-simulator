@@ -1,0 +1,1033 @@
+{
+    "opc.tcp://10.10.219.100:4840": {
+        "ns=0;i=84": {
+            "children": {
+                "ns=0;i=85": {
+                    "children": {
+                        "ns=3;i=ServerInterfaces": {
+                            "children": {
+                                "ns=4;i=1": {
+                                    "children": {
+                                        "ns=4;i=361": {
+                                            "browse_name": "DATA_STATUS",
+                                            "node_id": "ns=4;i=361",
+                                            "node_class": 1,
+                                            "value": null,
+                                            "display_name": "DATA_STATUS",
+                                            "children": {
+                                                "ns=4;i=364": {
+                                                    "browse_name": "STATUS",
+                                                    "node_id": "ns=4;i=364",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "STATUS",
+                                                    "children": {
+                                                        "ns=4;i=367": {
+                                                            "browse_name": "GENERALE",
+                                                            "node_id": "ns=4;i=367",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "GENERALE",
+                                                            "children": {
+                                                                "ns=4;i=368": {
+                                                                    "browse_name": "FREQUENCY",
+                                                                    "node_id": "ns=4;i=368",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "FREQUENCY",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=369": {
+                                                                    "browse_name": "ACTIVE_IMPORT",
+                                                                    "node_id": "ns=4;i=369",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_IMPORT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=370": {
+                                                                    "browse_name": "REACTIVE_IMPORT",
+                                                                    "node_id": "ns=4;i=370",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_IMPORT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=371": {
+                                                                    "browse_name": "APPARENT_IMPORT",
+                                                                    "node_id": "ns=4;i=371",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "APPARENT_IMPORT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=372": {
+                                                                    "browse_name": "ACTIVE_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=372",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER_TOTAL",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=373": {
+                                                                    "browse_name": "REACTIVE_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=373",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER_TOTAL",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=374": {
+                                                                    "browse_name": "APPARENT_POWER_TOTAL",
+                                                                    "node_id": "ns=4;i=374",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "APPARENT_POWER_TOTAL",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=375": {
+                                                                    "browse_name": "POWER_FACTOR_TOTAL",
+                                                                    "node_id": "ns=4;i=375",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "POWER_FACTOR_TOTAL",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=378": {
+                                                            "browse_name": "FASE_1",
+                                                            "node_id": "ns=4;i=378",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_1",
+                                                            "children": {
+                                                                "ns=4;i=379": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=379",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=380": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=380",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=381": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=381",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=382": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=382",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=383": {
+                                                            "browse_name": "FASE_2",
+                                                            "node_id": "ns=4;i=383",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_2",
+                                                            "children": {
+                                                                "ns=4;i=384": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=384",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=385": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=385",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=386": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=386",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=387": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=387",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=388": {
+                                                            "browse_name": "FASE_3",
+                                                            "node_id": "ns=4;i=388",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "FASE_3",
+                                                            "children": {
+                                                                "ns=4;i=389": {
+                                                                    "browse_name": "VOLTAGE",
+                                                                    "node_id": "ns=4;i=389",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "VOLTAGE",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=390": {
+                                                                    "browse_name": "CURRENT",
+                                                                    "node_id": "ns=4;i=390",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "CURRENT",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=391": {
+                                                                    "browse_name": "ACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=391",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "ACTIVE_POWER",
+                                                                    "children": {}
+                                                                },
+                                                                "ns=4;i=392": {
+                                                                    "browse_name": "REACTIVE_POWER",
+                                                                    "node_id": "ns=4;i=392",
+                                                                    "node_class": 2,
+                                                                    "value": 0.0,
+                                                                    "display_name": "REACTIVE_POWER",
+                                                                    "children": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        "ns=4;i=393": {
+                                                            "browse_name": "TEMPERATURA_PIASTRA",
+                                                            "node_id": "ns=4;i=393",
+                                                            "node_class": 2,
+                                                            "value": 0.0,
+                                                            "display_name": "TEMPERATURA_PIASTRA",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=394": {
+                                                    "browse_name": "ALLARMI",
+                                                    "node_id": "ns=4;i=394",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "ALLARMI",
+                                                    "children": {
+                                                        "ns=4;i=395": {
+                                                            "browse_name": "[0]",
+                                                            "node_id": "ns=4;i=395",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[0]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=396": {
+                                                            "browse_name": "[1]",
+                                                            "node_id": "ns=4;i=396",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[1]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=397": {
+                                                            "browse_name": "[2]",
+                                                            "node_id": "ns=4;i=397",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[2]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=398": {
+                                                            "browse_name": "[3]",
+                                                            "node_id": "ns=4;i=398",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[3]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=399": {
+                                                            "browse_name": "[4]",
+                                                            "node_id": "ns=4;i=399",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[4]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=400": {
+                                                            "browse_name": "[5]",
+                                                            "node_id": "ns=4;i=400",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[5]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=401": {
+                                                            "browse_name": "[6]",
+                                                            "node_id": "ns=4;i=401",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[6]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=402": {
+                                                            "browse_name": "[7]",
+                                                            "node_id": "ns=4;i=402",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[7]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=403": {
+                                                            "browse_name": "[8]",
+                                                            "node_id": "ns=4;i=403",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[8]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=404": {
+                                                            "browse_name": "[9]",
+                                                            "node_id": "ns=4;i=404",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[9]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=405": {
+                                                            "browse_name": "[10]",
+                                                            "node_id": "ns=4;i=405",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[10]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=406": {
+                                                            "browse_name": "[11]",
+                                                            "node_id": "ns=4;i=406",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[11]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=407": {
+                                                            "browse_name": "[12]",
+                                                            "node_id": "ns=4;i=407",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[12]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=408": {
+                                                            "browse_name": "[13]",
+                                                            "node_id": "ns=4;i=408",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[13]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=409": {
+                                                            "browse_name": "[14]",
+                                                            "node_id": "ns=4;i=409",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[14]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=410": {
+                                                            "browse_name": "[15]",
+                                                            "node_id": "ns=4;i=410",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[15]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=411": {
+                                                            "browse_name": "[16]",
+                                                            "node_id": "ns=4;i=411",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[16]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=412": {
+                                                            "browse_name": "[17]",
+                                                            "node_id": "ns=4;i=412",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[17]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=413": {
+                                                            "browse_name": "[18]",
+                                                            "node_id": "ns=4;i=413",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[18]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=414": {
+                                                            "browse_name": "[19]",
+                                                            "node_id": "ns=4;i=414",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[19]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=415": {
+                                                            "browse_name": "[20]",
+                                                            "node_id": "ns=4;i=415",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[20]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=416": {
+                                                            "browse_name": "[21]",
+                                                            "node_id": "ns=4;i=416",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[21]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=417": {
+                                                            "browse_name": "[22]",
+                                                            "node_id": "ns=4;i=417",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[22]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=418": {
+                                                            "browse_name": "[23]",
+                                                            "node_id": "ns=4;i=418",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[23]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=419": {
+                                                            "browse_name": "[24]",
+                                                            "node_id": "ns=4;i=419",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[24]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=420": {
+                                                            "browse_name": "[25]",
+                                                            "node_id": "ns=4;i=420",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[25]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=421": {
+                                                            "browse_name": "[26]",
+                                                            "node_id": "ns=4;i=421",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[26]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=422": {
+                                                            "browse_name": "[27]",
+                                                            "node_id": "ns=4;i=422",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[27]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=423": {
+                                                            "browse_name": "[28]",
+                                                            "node_id": "ns=4;i=423",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[28]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=424": {
+                                                            "browse_name": "[29]",
+                                                            "node_id": "ns=4;i=424",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[29]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=425": {
+                                                            "browse_name": "[30]",
+                                                            "node_id": "ns=4;i=425",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[30]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=426": {
+                                                            "browse_name": "[31]",
+                                                            "node_id": "ns=4;i=426",
+                                                            "node_class": 2,
+                                                            "value": null,
+                                                            "display_name": "[31]",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=427": {
+                                                    "browse_name": "TEMP_PST",
+                                                    "node_id": "ns=4;i=427",
+                                                    "node_class": 2,
+                                                    "value": 0.0,
+                                                    "display_name": "TEMP_PST",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=428": {
+                                                    "browse_name": "Nome_Ordine_Selezionato",
+                                                    "node_id": "ns=4;i=428",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "Nome_Ordine_Selezionato",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=429": {
+                                                    "browse_name": "N_Scato",
+                                                    "node_id": "ns=4;i=429",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "N_Scato",
+                                                    "children": {
+                                                        "ns=4;i=430": {
+                                                            "browse_name": "[0]",
+                                                            "node_id": "ns=4;i=430",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[0]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=431": {
+                                                            "browse_name": "[1]",
+                                                            "node_id": "ns=4;i=431",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[1]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=432": {
+                                                            "browse_name": "[2]",
+                                                            "node_id": "ns=4;i=432",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[2]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=433": {
+                                                            "browse_name": "[3]",
+                                                            "node_id": "ns=4;i=433",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[3]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=434": {
+                                                            "browse_name": "[4]",
+                                                            "node_id": "ns=4;i=434",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[4]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=435": {
+                                                            "browse_name": "[5]",
+                                                            "node_id": "ns=4;i=435",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[5]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=436": {
+                                                            "browse_name": "[6]",
+                                                            "node_id": "ns=4;i=436",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[6]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=437": {
+                                                            "browse_name": "[7]",
+                                                            "node_id": "ns=4;i=437",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[7]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=438": {
+                                                            "browse_name": "[8]",
+                                                            "node_id": "ns=4;i=438",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[8]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=439": {
+                                                            "browse_name": "[9]",
+                                                            "node_id": "ns=4;i=439",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[9]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=440": {
+                                                            "browse_name": "[10]",
+                                                            "node_id": "ns=4;i=440",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[10]",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=441": {
+                                                    "browse_name": "Qta_Eseguite",
+                                                    "node_id": "ns=4;i=441",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "Qta_Eseguite",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=442": {
+                                                    "browse_name": "STATO_ORDINE",
+                                                    "node_id": "ns=4;i=442",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "STATO_ORDINE",
+                                                    "children": {
+                                                        "ns=4;i=443": {
+                                                            "browse_name": "[0]",
+                                                            "node_id": "ns=4;i=443",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[0]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=444": {
+                                                            "browse_name": "[1]",
+                                                            "node_id": "ns=4;i=444",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[1]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=445": {
+                                                            "browse_name": "[2]",
+                                                            "node_id": "ns=4;i=445",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[2]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=446": {
+                                                            "browse_name": "[3]",
+                                                            "node_id": "ns=4;i=446",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[3]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=447": {
+                                                            "browse_name": "[4]",
+                                                            "node_id": "ns=4;i=447",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[4]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=448": {
+                                                            "browse_name": "[5]",
+                                                            "node_id": "ns=4;i=448",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[5]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=449": {
+                                                            "browse_name": "[6]",
+                                                            "node_id": "ns=4;i=449",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[6]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=450": {
+                                                            "browse_name": "[7]",
+                                                            "node_id": "ns=4;i=450",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[7]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=451": {
+                                                            "browse_name": "[8]",
+                                                            "node_id": "ns=4;i=451",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[8]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=452": {
+                                                            "browse_name": "[9]",
+                                                            "node_id": "ns=4;i=452",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[9]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=453": {
+                                                            "browse_name": "[10]",
+                                                            "node_id": "ns=4;i=453",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[10]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=454": {
+                                                            "browse_name": "[11]",
+                                                            "node_id": "ns=4;i=454",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[11]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=455": {
+                                                            "browse_name": "[12]",
+                                                            "node_id": "ns=4;i=455",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[12]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=456": {
+                                                            "browse_name": "[13]",
+                                                            "node_id": "ns=4;i=456",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[13]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=457": {
+                                                            "browse_name": "[14]",
+                                                            "node_id": "ns=4;i=457",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[14]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=458": {
+                                                            "browse_name": "[15]",
+                                                            "node_id": "ns=4;i=458",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[15]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=459": {
+                                                            "browse_name": "[16]",
+                                                            "node_id": "ns=4;i=459",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[16]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=460": {
+                                                            "browse_name": "[17]",
+                                                            "node_id": "ns=4;i=460",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[17]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=461": {
+                                                            "browse_name": "[18]",
+                                                            "node_id": "ns=4;i=461",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[18]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=462": {
+                                                            "browse_name": "[19]",
+                                                            "node_id": "ns=4;i=462",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[19]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=463": {
+                                                            "browse_name": "[20]",
+                                                            "node_id": "ns=4;i=463",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[20]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=464": {
+                                                            "browse_name": "[21]",
+                                                            "node_id": "ns=4;i=464",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[21]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=465": {
+                                                            "browse_name": "[22]",
+                                                            "node_id": "ns=4;i=465",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[22]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=466": {
+                                                            "browse_name": "[23]",
+                                                            "node_id": "ns=4;i=466",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[23]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=467": {
+                                                            "browse_name": "[24]",
+                                                            "node_id": "ns=4;i=467",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[24]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=468": {
+                                                            "browse_name": "[25]",
+                                                            "node_id": "ns=4;i=468",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[25]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=469": {
+                                                            "browse_name": "[26]",
+                                                            "node_id": "ns=4;i=469",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[26]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=470": {
+                                                            "browse_name": "[27]",
+                                                            "node_id": "ns=4;i=470",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[27]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=471": {
+                                                            "browse_name": "[28]",
+                                                            "node_id": "ns=4;i=471",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[28]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=472": {
+                                                            "browse_name": "[29]",
+                                                            "node_id": "ns=4;i=472",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[29]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=473": {
+                                                            "browse_name": "[30]",
+                                                            "node_id": "ns=4;i=473",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[30]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=474": {
+                                                            "browse_name": "[31]",
+                                                            "node_id": "ns=4;i=474",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[31]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=475": {
+                                                            "browse_name": "[32]",
+                                                            "node_id": "ns=4;i=475",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[32]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=476": {
+                                                            "browse_name": "[33]",
+                                                            "node_id": "ns=4;i=476",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[33]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=477": {
+                                                            "browse_name": "[34]",
+                                                            "node_id": "ns=4;i=477",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[34]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=478": {
+                                                            "browse_name": "[35]",
+                                                            "node_id": "ns=4;i=478",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[35]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=479": {
+                                                            "browse_name": "[36]",
+                                                            "node_id": "ns=4;i=479",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[36]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=480": {
+                                                            "browse_name": "[37]",
+                                                            "node_id": "ns=4;i=480",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[37]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=481": {
+                                                            "browse_name": "[38]",
+                                                            "node_id": "ns=4;i=481",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[38]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=482": {
+                                                            "browse_name": "[39]",
+                                                            "node_id": "ns=4;i=482",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[39]",
+                                                            "children": {}
+                                                        },
+                                                        "ns=4;i=483": {
+                                                            "browse_name": "[40]",
+                                                            "node_id": "ns=4;i=483",
+                                                            "node_class": 2,
+                                                            "value": 0,
+                                                            "display_name": "[40]",
+                                                            "children": {}
+                                                        }
+                                                    }
+                                                },
+                                                "ns=4;i=484": {
+                                                    "browse_name": "Concludi",
+                                                    "node_id": "ns=4;i=484",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "Concludi",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=485": {
+                                                    "browse_name": "Sospendi",
+                                                    "node_id": "ns=4;i=485",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "Sospendi",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=486": {
+                                                    "browse_name": "Scarto",
+                                                    "node_id": "ns=4;i=486",
+                                                    "node_class": 2,
+                                                    "value": null,
+                                                    "display_name": "Scarto",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=487": {
+                                                    "browse_name": "N_PREPARAZIONE_SELEZIONATA",
+                                                    "node_id": "ns=4;i=487",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "N_PREPARAZIONE_SELEZIONATA",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=488": {
+                                                    "browse_name": "N_PREPARAZIONE_INVIATA",
+                                                    "node_id": "ns=4;i=488",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "N_PREPARAZIONE_INVIATA",
+                                                    "children": {}
+                                                },
+                                                "ns=4;i=489": {
+                                                    "browse_name": "Qta_daProdurre",
+                                                    "node_id": "ns=4;i=489",
+                                                    "node_class": 2,
+                                                    "value": 0,
+                                                    "display_name": "Qta_daProdurre",
+                                                    "children": {}
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "browse_name": "PLC_1",
+                                    "display_name": "PLC_1",
+                                    "node_class": 1,
+                                    "node_id": "ns=4;i=1",
+                                    "value": null
+                                }
+                            },
+                            "browse_name": "ServerInterfaces",
+                            "display_name": "ServerInterfaces",
+                            "node_class": 1,
+                            "node_id": "ns=3;i=ServerInterfaces",
+                            "value": null
+                        }
+                    },
+                    "browse_name": "Objects",
+                    "display_name": "Objects",
+                    "node_class": 1,
+                    "node_id": "ns=0;i=85",
+                    "value": null
+                }
+            },
+            "browse_name": "Root",
+            "display_name": "Root",
+            "node_class": 1,
+            "node_id": "ns=0;i=84",
+            "value": null
+        }
+    }
+}
