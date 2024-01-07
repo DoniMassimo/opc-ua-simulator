@@ -1,13 +1,12 @@
 FROM python:3.12
-ADD ./Server/start.py ./Server/start.py
-ADD ./Server/opcua_constant.py ./Server/opcua_constant.py
-ADD ./server_data/server_struct.json ./server_data/server_struct.json
-ADD ./Server/server.py ./Server/server.py
-ADD ./Client/config.json ./Client/config.json 
+ADD ./server_init.py ./server_init.py
+ADD ./server/opcua_constant.py ./server/opcua_constant.py
+ADD ./test_project/ ./test_project/
+ADD ./server/server.py ./server/server.py
+ADD ./test_project/server/config.json ./test_project/server/config.json
+ADD ./utils/utils.py ./utils/utils.py
+ADD ./utils/global_const.py ./utils/global_const.py
 ADD requirements.txt requirements.txt
-# COPY ./server_data/server_struct.json ./server_data/server_struct.json
-# COPY ./Server/server.py ./Server/server.py
-# COPY ./Client/config.json ./Client/config.json 
 RUN pip install -r requirements.txt
-CMD ["python", "./Server/start.py"] 
+CMD ["python", "./server_init.py"] 
 

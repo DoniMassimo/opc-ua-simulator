@@ -6,8 +6,7 @@
       "udt_entry_index": [
         "ns=4;i=69"
       ],
-      "default_value":true,
-      "enabled":true,
+      "default_value":true
     }
   ]
 }
